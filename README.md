@@ -51,4 +51,24 @@
 - _create react-app_ is the name of remote script and `"."` specifies that we want the script to make a react project in the SAME FOLDER and not make a new folder for it.
 - if you had to make a new folder name, you could just provide the name of folder insited of `"."` and it would make a folder for you.
 - you know that it is finished when you see _"Happy Hacking"_ on your terminal. If you see this, we are ready to move on.
+
   ![alt text](https://github.com/nitish166/tiktok/blob/main/Happy.JPG?raw=true)
+
+- Now that we have our react app installed, now we can start it. in the terminal type the following command. this command will start the react app.
+  - `npm start`
+- After, you hit enter you should see your default browser open. Although I suggest google chrome of it's development tool making life easier, it's still your persional preferences, but we can not guarantee development quality with other browsers.
+  ![alt text](https://github.com/nitish166/tiktok/blob/main/local.JPG?raw=true)
+- If you did everything correct, you must see the above screen on your browser.
+- if you do not see the bowser tab,
+  - [http://localhost:3000](http://localhost:3000)
+- then go to the above URL or even better, I've something for you. [This](http://localhost:3000) will take you to your app.
+  ![alt text](https://github.com/nitish166/tiktok/blob/main/app.JPG?raw=true)
+- This is the welcome screen of react. but we want to build a tik-tok clone. So, we need to clean up our React Project a bit so that we can get started with the Tik-tok clone.
+  ![alt text](https://github.com/nitish166/tiktok/blob/main/clean.JPG?raw=true)
+- Delete (optional) three files from the `src` folder from the React App. Those three files are
+  - App.test.js
+  - logo.svg
+  - setupTest.js
+- We are deleting these files because these are not relevent to us in any project.
+
+- That's not all, if you check the browser window logo, I know what you're seeing, do not freak out, we have the solution, go tho App.js and remove following lines form code.
