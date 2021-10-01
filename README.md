@@ -32,3 +32,13 @@
 - As soon as you are in the folder, right click and open with the code.
 
 - After you click Open with code you'll see a huge weird window. Don't worry we got you covered. This is what you might be seeing.
+
+  ![alt text](https://github.com/nitish166/tiktok/blob/main/VS.JPG?raw=true)
+
+- So, Visual Studio code is a code editor we are going to use. but you can use Atom or any other editor too, but it will make your life easier. 😏
+
+- Now that you're in Visual studio code, press ctrl+ J (Windows) and you should see a terminal at the bottom just like shown below.
+
+![alt text](https://github.com/nitish166/tiktok/blob/main/terminal.JPG?raw=true)
+
+- Don't freak out, this is just a regular terminal, we're not hacking anything. :grinning:
