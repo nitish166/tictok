@@ -25,7 +25,7 @@
 - `Firebase` is great tool to get started with project quickly. we will also using `HTML & CSS`.
 - Please make sure, you need to have [Visual Studio Code](https://code.visualstudio.com) and [NodeJS](https://nodejs.org/en/) installed.
 
-**Are you Pumped? Let's Gooooo 🚀**
+**Are you Pumped? Let's Gooooo 🔥🚀**
 
 - To get started let's make a new folder name as `tiktok`. and inside make another two folder- `tiktok-frontend` and `tiktok-backend` respectively & open it.
 
@@ -57,14 +57,20 @@
 - Now that we have our react app installed, now we can start it. in the terminal type the following command. this command will start the react app.
   - `npm start`
 - After, you hit enter you should see your default browser open. Although I suggest google chrome of it's development tool making life easier, it's still your persional preferences, but we can not guarantee development quality with other browsers.
+
   ![alt text](https://github.com/nitish166/tiktok/blob/main/local.JPG?raw=true)
+
 - If you did everything correct, you must see the above screen on your browser.
 - if you do not see the bowser tab,
   - [http://localhost:3000](http://localhost:3000)
 - then go to the above URL or even better, I've something for you. [This](http://localhost:3000) will take you to your app.
+
   ![alt text](https://github.com/nitish166/tiktok/blob/main/app.JPG?raw=true)
+
 - This is the welcome screen of react. but we want to build a tik-tok clone. So, we need to clean up our React Project a bit so that we can get started with the Tik-tok clone.
+
   ![alt text](https://github.com/nitish166/tiktok/blob/main/clean.JPG?raw=true)
+
 - Delete (optional) three files from the `src` folder from the React App. Those three files are
   - App.test.js
   - logo.svg
@@ -72,3 +78,28 @@
 - We are deleting these files because these are not relevent to us in any project.
 
 - That's not all, if you check the browser window logo, I know what you're seeing, do not freak out, we have the solution, go tho App.js and remove following lines form code.
+  ```
+   import logo from “./logo.svg”;
+  ```
+- Also, remove everything under the first `<div>` element from your App.js file. You're code should look like the following.
+  ```
+  import React from “react”;
+  import “./App.css”;
+  function App() {
+      return <div className=”app”>React App</div>;
+  }
+  export default App;
+  ```
+- Now, let's clean up the CSS files a bit.
+- Go to `app.css` and remove all the contents of your files.
+- Now, go to `index.css` and add this piece of code on the top. and look at the change on the app. what do you see?
+
+  ```
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  ```
+
+- This will get rid of the margin and padding of the page.
+- Now we have React project perfectly setup. now we can start making the Tik-Tok clone. **LET'S Gooo 🔥🚀**
