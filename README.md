@@ -39,6 +39,16 @@
 
 - Now that you're in Visual studio code, press ctrl+ J (Windows) and you should see a terminal at the bottom just like shown below.
 
-![alt text](https://github.com/nitish166/tiktok/blob/main/terminal.JPG?raw=true)
+  ![alt text](https://github.com/nitish166/tiktok/blob/main/terminal.JPG?raw=true)
 
-- Don't freak out, this is just a regular terminal, we're not hacking anything. :grinning:
+- Don't freak out, this is just a regular terminal, we're not hacking anything. 😀
+
+- Now that's you're in terminal, we can now install and setup React app. and this is usually a headache when doing manually. So `facebook`, the creator of React made a script which installs and setup React for you without any type of headache.
+
+- To use this script, just type the following in the terminal and press `Enter`. this will take some time so till then either grap some ☕ or you can read what the script actually does below.
+- `npx create-react-app`
+- Here's how this works. `npx` is part of npm (node package manager) except npx runs a remote script instead of installing it locally. this is done so you have always a latest version of react installed in your project.
+- _create react-app_ is the name of remote script and `"."` specifies that we want the script to make a react project in the SAME FOLDER and not make a new folder for it.
+- if you had to make a new folder name, you could just provide the name of folder insited of `"."` and it would make a folder for you.
+- you know that it is finished when you see _"Happy Hacking"_ on your terminal. If you see this, we are ready to move on.
+  ![alt text](https://github.com/nitish166/tiktok/blob/main/Happy.JPG?raw=true)
