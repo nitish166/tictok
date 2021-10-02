@@ -1,9 +1,14 @@
+import React from "react";
 import "./App.css";
+import Video from "./Video.js";
 
 function App() {
   return (
     <div className="app">
-      <h1>Iam tiktok</h1>
+      <div className="app__videos">
+        <Video />
+        <Video />
+      </div>
     </div>
   );
 }
