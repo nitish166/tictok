@@ -103,3 +103,155 @@
 
 - This will get rid of the margin and padding of the page.
 - Now we have React project perfectly setup. now we can start making the Tik-Tok clone. **LET'S Gooo 🔥🚀**
+
+# Organize the clone application:
+
+- As we are fully setup. So, we need to think how we are going to run a project in a way that it is going to be the most effective and cleanest code of all.
+
+- that's why let's think what we have in TikTok?
+
+- So, basically we have full video on the screen and we have a footer in the bottom and sidebar on the side of the screen.
+
+- Now, let's deduct in even more further, now if we start looking at the footer we see three things, first the name of the user, secound caption and third the name of the song.
+
+- Looking of the sidebar we have three icons: first in the heart, second is messages and third is number if shares.
+
+- Now, we know how we have to keep our components in organised manner so let's get into coding.
+
+## Alright, are you still pumped? let's goooo 🚀🔥
+
+- let's start with editing `app.js`. at first we will write some dummy content so that we know in our web app that it is running.
+
+  ```
+  import React from "react";
+  import "./App.css";
+
+  function App() {
+    return (
+      //BEM
+      <div className="App">
+        <h1>Let's build Tik-Tok clone</h1>
+        <div className="app__videos">
+          <Video/>
+          <Video/>
+          <Video/>
+          <Video/>
+        </div>
+      </div>
+    );
+  }
+
+  export default App;
+  ```
+
+- if your're app is returning properly till now that means you're good to go.
+
+- Now, we will make a `<Vidoe>` component cause we want more than one video in tik-tok clone.
+
+  - for creating the `video` component go to your `src` folder and create `video.js` and `video.css` files.
+  - once you're done with this. let's setup `video.js`
+    file. which must be looking like this-
+
+    ```
+    import React from “react";
+    import "./vedio.css";
+
+
+    const Video = () => {
+      return (
+        <div className="vedio">
+          <h1>hi</h1>
+          {/* <VedioFooter/> */}
+          {/* <VedioSidebar/> */}
+        </div>
+      );
+    };
+
+    export default Video;
+    ```
+
+  - And, oh yeah, you don't forget to import video.css
+  - As soon as you setup `video.js` file. now you need to place a video in the `<div>` section so that it can show your video on the screen.
+  - your video component which is inbuilt in React library, it will automatically make your life eaiser to import a video in your web app.
+
+    ```
+        const Video = () => {
+        return (
+          <div className="vedio">
+            <video
+              className="vedio__player"
+              loop
+              src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+            />
+            {/* <VedioFooter/> */}
+            {/* <VedioSidebar/> */}
+          </div>
+        );
+      };
+    ```
+
+- Now, don't scratch your head if you do not see it because we have not edited our `app.css` file yet.
+- As soon as we edit our `app.css` file you will start seeing this video in the format of Tik-Tok video
+
+  ```
+      html {
+      scroll-snap-stop: y mandatory;
+    }
+
+    .App {
+      background-color: black;
+      height: 100vh;
+      display: grid;
+      place-items: center;
+    }
+
+    .app__videos {
+      position: relative;
+      height: 800px;
+      overflow: scroll;
+      width: 80%;
+      max-width: 500px;
+      scroll-snap-type: y mandatory;
+    }
+  ```
+
+- you must be seeing the video in the way you see in your Tik-Tok app.
+
+- But, what's make tik-tok video so special?
+  - it's reapeated running loop videos. but also one thing. whenever we swipe to next video we do not stop in between we are either in the previous video or next video, right?
+- So, now let's get into it and make it work.
+  ```
+    vedio {
+    position: relative;
+    border: 1px solid red;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+  .vedio__player {
+    background-color: black;
+    height: 100%;
+    object-fit: fill;
+    width: 100%;
+  }
+  ```
+- By doing this you must be same your video at a fixed place but still the video are not coming into right position when we scroll it.
+
+  - let's add add scroll functionality in `app.css` file.
+
+    ```
+
+    /* Hide scrollbar for Chrome, Safari adn Opera */
+    .app_vedios::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar ofr IE, Edge, and Firefox */
+    .app__vedios {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    ```
+
+  - Now if you try to scroll you're video, you will only be stopped at a video not in between. Am I right?
