@@ -1,4 +1,4 @@
-/* html {
+html {
   scroll-snap-type: y mandatory;
 }
 
@@ -26,4 +26,4 @@
 .app__videos {
   -ms-overflow-style: none;
   scrollbar-width: none;
-} */
+}

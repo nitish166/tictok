@@ -1,19 +1,29 @@
-import React, { useState } from "react";
+import React from "react";
 import "./App.css";
-import Demo from "./demo";
-// import Video from "./Video.js";
+import Video from "./Video.js";
 
 function App() {
-  const [count, setCount] = useState(0);
   return (
     <div className="app">
       <div className="app__videos">
-        {/* <Video />
-        <Video /> */}
-        <button onClick={() => setCount(count + 1)}>Click me</button>
-        {[...Array(count)].map((_, i) => (
-          <Demo key={i} />
-        ))}
+        <Video
+          url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          channel="nitish166"
+          description="Yoo this work"
+          song="99 problem but react aint one"
+          likes={123}
+          messages={456}
+          shares={222}
+        />
+        <Video
+          url="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+          channel="nitish166"
+          description="Yoo this work"
+          song="99 problem but react aint one"
+          likes={123}
+          messages={456}
+          shares={222}
+        />
       </div>
     </div>
   );
